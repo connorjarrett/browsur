@@ -1,11 +1,10 @@
-
 function init() {
-    const ApplicationName = "Files"
+    const ApplicationName = "Web"
 
     const scripts = [
         "api/window.js",
         `Applications/${ApplicationName}/build.js`,
-        `Applications/${ApplicationName}/api.js`
+        `Applications/${ApplicationName}/redirect.js`,
     ]
 
     const styles = [
@@ -40,7 +39,7 @@ function init() {
     }
 
     // Create Window
-    var window = createWindow(ApplicationName,true,"1510px","930px",[],false)
+    var window = createWindow(ApplicationName,true,"1510px",null,[],false)
 
     build(window)
 

@@ -47,6 +47,10 @@ function createWindow(name, showTitle, width, height, percentageThreshold, overf
     let contentArea = document.createElement("div")
     contentArea.classList = "content"
 
+    if (!overflow) {
+        contentArea.style.overflowY = "hidden"
+    }
+
     window.appendChild(header)
     window.appendChild(contentArea)
     $("body > .content-area")[0].appendChild(window)

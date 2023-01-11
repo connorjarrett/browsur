@@ -1,5 +1,5 @@
 let bookmarks = [
-    "Files"
+    "Web"
 ]
 
 function openToDock(window, location, dontAnimateIn) {
@@ -74,8 +74,9 @@ function closeFromDock(id) {
     }
 }
 
-// for (b=0; b<bookmarks.length; b++) {
-//     let window = app(bookmarks[b])
-//     openToDock(window, "main", true).classList.remove("open")
-//     window.remove()
-// }
+for (b=0; b<bookmarks.length; b++) {
+    let window = app(bookmarks[b])
+    console.log(window)
+    openToDock(window, "main", true).classList.remove("open")
+    window.remove()
+}

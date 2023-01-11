@@ -27,5 +27,3 @@ function getAppFromPath(path) {
         }
     })
 }
-
-getAppFromPath("/fold/shart")
