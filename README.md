@@ -2,6 +2,10 @@
 MacOS asthetic desktop in the browser
 > Name Explained: Browser + MacOS Big Sur = browsur
 
+## :warning: Caution
+This is a for fun project, still very much in development.
+Expect errors & bugs
+
 ## Functions Checklist
 - [x] Moveable Windows (With boundries)
 - [x] Dock
