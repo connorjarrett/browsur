@@ -1,0 +1,26 @@
+{
+    "name":"/",
+    "type":"folder",
+    "inside":[
+        {
+            "name":"fold",
+            "type":"folder",
+            "inside":[
+                {
+                    "name":"shart",
+                    "type":"file"
+                },
+                {
+                    "name":"poo",
+                    "type":"folder",
+                    "inside":[
+                        {
+                            "name":"blob",
+                            "type":"file"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
