@@ -1,7 +1,7 @@
 // Show the time on the menu bar
 function uiTime() {
     let time = getTime()
-    let timeStr = `${time["day"]} ${time["month"]} ${time["date"]} ${time["hour"]}:${time["min"]} ${time["ampm"]}`
+    let timeStr = `${time["day"]} ${time["month"]} ${time["date"]} ${('0' + time["hour"]).slice(-2)}:${('0' + time["min"]).slice(-2)} ${time["ampm"]}`
     $("#time")[0].innerHTML = timeStr
 }
 setInterval(uiTime, 100)
