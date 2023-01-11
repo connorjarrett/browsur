@@ -5,5 +5,5 @@ MacOS asthetic desktop in the browser
 ## Functions Checklist
 - [x] Moveable Windows (With boundries)
 - [x] Dock
-- [ ] Filesystem
-- [ ] Apps
+- [ ] ![](https://img.shields.io/badge/-Work%20in%20Progress-e69b10?style=plastic) Filesystem
+- [ ] ![](https://img.shields.io/badge/-Work%20in%20Progress-e69b10?style=plastic) Apps
