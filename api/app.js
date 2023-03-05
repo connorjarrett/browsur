@@ -17,7 +17,7 @@ function app(name) {
         })
 
         return window;
-    } catch(error) {
-        console.log("oop")
+    } catch(e) {
+        console.error(e)
     }
 }
