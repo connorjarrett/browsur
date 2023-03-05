@@ -3,19 +3,19 @@
     "type":"folder",
     "inside":[
         {
-            "name":"fold",
+            "name":"testFolder",
             "type":"folder",
             "inside":[
                 {
-                    "name":"shart",
+                    "name":"testFile",
                     "type":"file"
                 },
                 {
-                    "name":"poo",
+                    "name":"testFolder2",
                     "type":"folder",
                     "inside":[
                         {
-                            "name":"blob",
+                            "name":"testFile2",
                             "type":"file"
                         }
                     ]
