@@ -1,0 +1,164 @@
+:root {
+    --sidebarAnimTime: 450ms
+}
+
+body > .content > .window:not(.fullscreen) {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+body > .content:has(>.window.fullscreen:not(.minimized)) {
+    height: 100% !important;
+    top: 0px !important;
+}
+
+body > .content > .window.fullscreen {
+    border-radius: 0 !important;
+
+    max-width: unset !important;
+    max-height: unset !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    /* transition: all 300ms; */
+}
+
+body > .content > .window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    overflow: hidden;
+    border-radius: 7pt;
+    box-shadow: 14px 10px 24px rgba(38, 38, 38, 0.42);
+
+    z-index: 1;
+
+    transition: width 300ms, height 300ms;
+}
+
+body > .content > .window > aside  {
+    height: 100%;
+}
+
+body > .content > .window > main {
+    height: calc(100% - 50px);
+    margin-top: auto;
+
+    background-color: white;
+    /* flex-grow: 1; */
+    max-width: 100%;
+    width: -webkit-fill-available;
+    width: fill-available;
+
+    overflow: auto;
+}
+
+body > .content > .window > header {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 100px auto;
+    z-index: 2;
+}
+
+body > .content > .window > header > div {
+    padding: 13px;
+    box-sizing: border-box;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+
+body > .content > .window > header > div {
+    background-color: rgb(253, 248, 244);
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+body > .content > .window > header > .left {
+    transition: all var(--sidebarAnimTime);
+}
+
+body > .content > .window > header .traffics {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 50%;
+}
+
+body > .content > .window > header .traffics button{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    height: 100%;
+
+    border: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.5em;
+    /* padding-bottom: 0.05em; */
+    padding-left: 0.05em;
+}
+
+body > .content > .window > header .traffics:not(:hover) button {
+    color: transparent !important;
+}
+
+body > .content > .window > header .traffics .close {
+    background-color: color(srgb 0.999 0.3702 0.3387);
+    border: 1px solid color(srgb 0.9466 0.3023 0.265);
+    color: rgb(109,24,10);
+}
+
+body > .content > .window > header .traffics .min {
+    background-color: color(srgb 0.9951 0.7381 0.1736);
+    border: 1px solid color(srgb 0.8746 0.6196 0.1185);
+    color: rgb(163,104,29);
+}
+
+body > .content > .window > header .traffics .full {
+    background-color: color(srgb 0.1592 0.7835 0.2474);
+    border: 1px solid color(srgb 0.1432 0.6682 0.1713);
+    color: rgb(33,84,21);
+}
+
+.content > .window > aside {
+    background: rgba(255, 255, 255, 0.94);
+    width: 100px;
+
+    padding: 50px 5px 5px 5px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all var(--sidebarAnimTime);
+
+    font-size: 0.7em;
+    overflow: hidden;
+}
+
+.content > .window > aside b {
+    font-weight: normal;
+    color: rgb(140, 138, 137)
+}
+
+.content > .window > aside *:not(b) {
+    font-weight: lighter;
+}

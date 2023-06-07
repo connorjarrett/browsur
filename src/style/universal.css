@@ -1,0 +1,101 @@
+.icon {
+    font-family: "Material Symbols Outlined";
+}
+
+.appicon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+
+    border-radius: 15px;
+    background-color: grey;
+
+    overflow: visible;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: contrast(0.7);
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+.dropdown > ul{
+    position: absolute !important;
+    left: -10px;
+    margin: 0;
+    display: none;
+}
+
+.dropdown li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+    border-radius: 100vmin;
+    padding: 2px 7px 2px 7px;
+    box-sizing: border-box;
+
+    cursor: default !important;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown li:hover {
+    background-color: color(srgb 0.0031 0.4786 1);
+    color: white;
+}
+
+.dropdown ul {
+    position: relative;
+    list-style-type: none;
+    width: max-content;
+
+    color: black;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+
+    padding: 4px;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.dropdown li:has(>ul)::after {
+    content: '>';
+    font-family: monospace;
+    font-weight: lighter;
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.dropdown li:hover > ul {
+    display: block;
+}
+
+.dropdown ul ul {
+    display: none;
+    position: absolute;
+    left: calc(100% - 3px);
+}
+
+.dropdown hr {
+    border: none;
+    border-bottom: 1px solid rgba(116, 116, 116, 1);
+}
