@@ -1,0 +1,12 @@
+{
+    "Slugari": [
+        {
+            "name": "init.js",
+            "type": "file"
+        },
+        {
+            "name": "appicon.png",
+            "type": "file"
+        }
+    ]
+}
