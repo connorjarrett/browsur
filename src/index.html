@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style/glass.css">
+    <link rel="stylesheet" href="style/desktop.css">
+    <link rel="stylesheet" href="style/universal.css">
+    <link rel="stylesheet" href="style/window.css">
+    <link rel="stylesheet" href="style/default-app.css">
+
+    <!-- API Include -->
+    <script src="script/api/sys.js"></script>
+    <script src="script/api/fs.js"></script>
+    <script src="script/api/dock.js"></script>
+    <script src="script/api/app.js"></script>
+    <script src="script/api/gui.js"></script>
+
+    <script>var apps={}; </script>
+
+    <title>Browsur</title>
+</head>
+<body>
+    <header class="menu glass-extreme">
+        <div class="left">
+            <span id="sys-logo" class="dropdown"><ul><li>Recent Items<ul><li>1</li><li>2<ul><li>3</li></ul></li></ul></li><li>About Mac</li><hr><li>Kill Me</li></ul></span>
+            <span id="open-app">Finder</span>
+            <ul class="options">
+                <li>File</li>
+                <li>Edit</li>
+            </ul>
+        </div>
+        <div class="right">
+            <span id="date"></span>
+        </div>
+    </header>
+
+    <section class="content">
+
+    </section>
+    <section class="desktop">
+        
+    </section>
+
+    <footer class="dock glass-low">
+        <div class="bookmarks">
+        </div>
+        
+        <div class="currentlyOpen">
+            <!-- <div class="appicon"></div> -->
+        </div>
+
+        <hr>
+
+        <div class="minimized">
+            <div class="appicon"></div>
+        </div>
+    </footer>
+
+    <!-- Script Include -->
+    <script src="script/ui.js"></script>
+</body>
+
+<script>
+    async function defaults() {
+        const x = await app.importDefaults()
+        
+        console.log(fs.fromPath("/Applications/Slugari/appicon.ico"))
+        dock.push("Slugari", "bookmarks")
+        // app.run("Explorer")
+    }
+
+    defaults()
+</script>
+</html>
