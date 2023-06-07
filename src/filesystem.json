@@ -1,0 +1,12 @@
+[
+    {
+        "name": "First File",
+        "type": "file"
+    },
+    {
+        "name": "Applications",
+        "type": "dir",
+        "contents": [
+        ]
+    }
+]
