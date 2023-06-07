@@ -4,46 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="api/api.js"></script>
-
-    <link rel="icon" type="image/ico" href="favicon.ico"/>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="universal.css">
-
     <title>Browsur</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="page/style.css">
+
 </head>
 <body>
-    <header>
-        <div class="left">
-            <img id="server-logo" src="favicon.ico">
-            <p id="app-name">Browsur</p>
-        </div>
-        <div class="right">
-            <span class="symbol" onclick="settings()">settings</span>
-            <p id="time">Mon Dec 12 5:13</p>
-        </div>
-    </header>
+    <section class="hero">
+        <img src="page/image/hero.png">
+        <!-- <img src="https://www.apple.com/v/macbook-pro-14-and-16/d/images/why-mac/hero_why_mac__e1d8olus0ck2_large.jpg"> -->
+        <h1>Browsur</h1>
+        <h2 class="scroll-to-reveal main-tag">
+            Works slower.<br>
+            Plays nothing.<br>
+            Goes nowhere.
+        </h2>
 
-    <div class="content-area"></div>
-
-    <div class="desktop file-grid">
-
-    </div>
-
-    <div class="dock">
-        <div class="bookmark"></div>
-        <hr>
-        <div class="temporary"></div>
-    </div>
-
-    <script src="api/ui.js"></script>
-    <script src="api/app.js"></script>
-    <script src="api/fs.js"></script>
-    <script src="api/dock.js"></script>
-    <script src="api/window.js"></script>
+        <h3 class="scroll-to-reveal main-sub">
+            Browsur makes the things you do most on your computer even worse, with
+            useless new ways to get less done, immerse yourself in next-level frustration,
+            and take no advantage of your other devices.
+        </h3>
+    </section>
     
+    <main>
+        <article class="c-size launch" id="get-browsur">
+            <h2>Browsur lives in the browser</h2>
+            <p>
+                I've already made you scroll too far, now it's time for the big reveal.
+                Set your expectations low and click just button already
+            </p>
+            <br><br>
+            <a href="src/"><button>Try Browsur now</button></a>
+        </article>
+
+        <article class="c-size browsur-does">
+            <h2>Browsur does... something.<br>So you can... waste time online?</h2>
+            <p>
+                Browsur is... something, I guess? It has some apps, but they're probably not as good as what you're used to. And who needs Microsoft 365 or Adobe Creative Cloud when you have... a file explorer. No matter who you are, or what you want to do, Browsur probably can't do it either.
+            </p>
+            <br><br>
+            <a href="#get-browsur"><button>Why are you still scrolling</button></a>
+        </article>
+
+        <section class="c-size grid grid-65-35">
+            <article class="info-panel article-titled c-size">
+                <div class="header">
+                    <h2>Explorer updates</h2>
+                </div>
+                <div class="content" data-ex-bg="#7b49ba" data-ex-text="#ffffff">
+                    <article class="preview">
+                        <p class="blockquote">
+                            Files
+                        </p>
+                        <span data-nosnippet class="emoji-only">&#128128;</span>
+                    </article>
+                    <article class="expanded">
+                        <p>
+                            Introducing Explorer, the most basic and outdated file explorer ever created. With its limited features and clunky
+                            interface, Explorer will take you back to the Stone Age of computing. Forget about intuitive navigation or advanced
+                            search functions - Explorer will make you feel like you're solving a puzzle every time you need to find a file.
+                            <br><br>
+                            But that's not all. Explorer also comes with the added bonus of being extremely vulnerable to malware and viruses,
+                            making it the perfect tool for hackers and cybercriminals. So not only will you have a terrible user experience, but
+                            you'll also be putting your entire system at risk! 
+                        </p>
+                    </article>
+                    
+                </div>
+                <img class="expand" src="page/image/new.svg">
+            </article>
+    
+            <article class="info-panel article-titled c-size">
+                <div class="header">
+                    <h2>Introducing Slugari</h2>
+                </div>
+                <div class="content" data-ex-bg="#4ea676" data-ex-text="#ffffff">
+                    <article class="preview">
+                        <p class="blockquote">Possibly the world's slowest browser</p>
+                        <span data-nosnippet class="emoji-only">&#128012;</span>
+                    </article>
+                    <article class="expanded">
+                        <p>
+                            Browsur brings you Slugari, the web browser, inside the browser,
+                            so that you can surf the web without having to leave
+                            Browsur.
+                            <br><br>
+                            Slugari cleans the clutter of the web by only supporting a
+                            few webpages. This is definitely by design and nothing to do
+                            with a lack of external iframe support on most websites.
+                        </p>
+                    </article>
+                    
+                </div>
+                <img class="expand" src="page/image/new.svg">
+            </article>
+        </section>
+
+        <article class="c-size privacy">
+            <h2>Make what was private, public</h2>
+            <p>
+                Browsur brings the most primitive security of any personal computer
+                to your browser. Browsur comes with built-in bugs that make it easy for
+                malware and viruses to infect your session, and it gives you the freedom
+                to share everything with everyone. Passkeys? Nope, just use your simple
+                and insecure passwords. File encryption? No such thing, all your data is up for
+                grabs. So no matter what you're doing, Browsur helps your private
+                information become public.
+            </p>
+            <br><br>
+            <a href="#get-browsur"><button>Seriously stop scrolling</button></a>
+
+            <div class="blur-box"></div>
+        </article>
+
+        <section class="c-size grid grid-50-50 c-aspect">
+            <article class="continuty">
+                <h2 class="slimmer">Doesn't work with any of your other devices</h2>
+                <a class="link">Learn about how Browsur</a>
+                <br><br>
+                
+            </article>
+    
+            <article class="develop">
+                <h2 class="slimmer">Developers will<br>hate Browsur too.</h2>
+                <h3><a class="link link-newtab" target="_blank" href="https://github.com/conjardev/browsur">Learn about developing an app for Browsur</a></h3>
+                <br><br>
+                <img src="page/image/code-icon.png">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="c-size c-width-only">
+            <ol>
+                <li>I can confirm that Browsur does not take advantage of your other devices.</li>
+                <li>Waste of time not guaranteed.</li>
+                <li>Apps may be limited.</li>
+                <li>Browsur does not leave intentional security holes open</li>
+                <li>Apple don't sue me for copying your website design &hearts;.</li>
+                <li>This is a joke if you couldn't already tell.</li>
+                <li>Browsur does work though.</li>
+            </ol>
+            <hr>
+            <section class="flow-r">
+                <div>
+                    <span class="copy">Copyright &copy; <span class="year"></span> Connor Jarrett. All rights reserved.</span>
+                    <span class="locale"></span>
+                </div>
+                <ul class="satire">
+                    <li>This</li>
+                    <li>Website</li>
+                    <li>Is</li>
+                    <li>Satire</li>
+                    <li><a href="https://github.com/conjardev/browsur" target="_blank">Github Repo</a></li>
+                    <li><a href="src/" target="_blank">Live Demo</a></li>
+                    <li><a href="https://www.apple.com/uk/macbook-pro-14-and-16/why-mac/" target="_blank">Source A</a></li>
+                    <li><a href="https://www.apple.com/uk/macos/ventura/" target="_blank">Source B</a></li>
+                </ul>
+            </section>
+            <span class="disclaimers">
+                <b>This bit is serious</b><br>
+                ChatGPT used to satire-ify content from the sources linked above.<br>
+                This website is not affiliated with Apple Inc. The opinions expressed here are solely those of the author(s) and should not be taken seriously.<br>
+                The content is meant to be humorous and should not be relied upon for any purpose.<br>
+                The images used on this website are satirical representations and are not exact copies of those owned by Apple Inc,<br>
+                They are used for parody and satire purposes only and are protected under fair use. 
+            </span>
+        </div>
+    </footer>
+
+    <script src="page/script.js"></script>
 </body>
 </html>
