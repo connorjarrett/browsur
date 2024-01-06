@@ -1,13 +1,15 @@
-<h1 align="center">Browsur</h1>
-<h2 align="center">MacOS aesthetic desktop in the browsur</h2>
+<!-- <h1 align="center">Browsur</h1>
+<h2 align="center">macOS aesthetic desktop in the browsur</h2>
 
 ![]
 
-[Browsur](https://conjardev.github.io/browsur/src)
+- :computer: [Browsur](https://conjardev.github.io/browsur/src)
+- :question: [About Browsur](https://conjardev.github.io/browsur)
+- :hammer_and_wrench: [Browsur for Developers](https://github.com/conjardev/browsur/blob/docs/README.MD)
 
-[Why Browsur](https://conjardev.github.io/browsur) (Satire)
+---
 
-[Browsur for Developers](https://github.com/conjardev/browsur/docs/README.md) (If you felt like wasting your time making a Browsur app)
+I think it's funny that I spent so long on this joke that Apple released a new version of macOS in the time it took me to make it.
 
 ---
 
@@ -26,4 +28,4 @@ Even before I switched to Mac, I was fascinated by the desktop and design of it 
 Probably not.
 
 ### Regular Updates?
-See above
+See above -->
